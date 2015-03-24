@@ -16,8 +16,11 @@
 @interface ElementsViewController ()
 
 @property (nonatomic, weak) IBOutlet UIImageView *playerActive;
-@property (nonatomic, weak) IBOutlet UIImageView *playerX;
-@property (nonatomic, weak) IBOutlet UIImageView *playerO;
+@property (nonatomic) IBOutlet UIImageView *playerX;
+@property (nonatomic) IBOutlet UIImageView *playerO;
+@property (nonatomic) IBOutlet UIImageView *cel00;
+@property (nonatomic) IBOutlet UIImageView *cel01;
+
 @property (nonatomic) int currentPlayerIndex;
 
 @property (nonatomic, copy) NSArray *player;
@@ -29,10 +32,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-//    ElementsView *backgroundView = [[ElementsView alloc] init];
-    // Set it as *the* view of this view controller
-//    self.view = backgroundView;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,80 +39,49 @@
     // Dispose of any resources that can be recreated.
 }
 
-//- (instancetype)initWithNibName:(NSString *)nibNameOrNil
-//                         bundle:(NSBundle *)nibBundleOrNil
-//{
-//
-//    
-//    // Call the init method implemented by the superclass
-//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-//    if (self) {
-//        // Create two arrays filled with questions and answers
-//        // and make the pointers point to them
-//        self.questions = @[@"From what is cognac made?",
-//                           @"What is 7+7?",
-//                           @"What is the capital of Vermont?"];
-//        self.answers = @[@"Grapes",
-//                         @"14",
-//                         @"Montpelier"];
-//    }
-//    // Return the address of the new object
-//    return self;
-//}
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil
+                         bundle:(NSBundle *)nibBundleOrNil
+{
+    // Call the init method implemented by the superclass
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        
+        self.playerX = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+        
+        UIImage *xImage = [UIImage imageNamed:@"imageX.png"];
+//        UIImage *oImage = [UIImage imageNamed:@"imageO.png"];
+        
+        [self.playerX setImage:xImage];
+        
+        
+//        self.playerO = [[UIImageView alloc]initWithImage:oImage];
+        
+//        [self.view addSubView: xImage];
+        
+        self.currentPlayerIndex = 0;
+//        self.cel00 = self.playerX;
+        NSLog(@"player %d esta ativo.", self.currentPlayerIndex);
+        self.currentPlayerIndex = 1;
+//        self.cel00 = [[[UIImageView alloc]init] initWithImage:xImage];
 
+    }
+    // Return the address of the new object
+    return self;
+}
 
-
-//- (IBAction)showPlayer:(id)sender
-//{
-//    
-//    UIImage *xImage = [UIImage imageNamed:@"imageX.png"];
-//    self.playerX = [[[UIImageView alloc]init] initWithImage:xImage];
-////    NSMutableArray *views = [NSMutableArray array];
-////
-////    NSUInteger viewCount = 30;
-////    NSUInteger index;
-//}
-
-
-
-
-//- (IBAction)showPlayer:(id)sender
-//{
-//    
-////    NSMutableArray *views = [NSMutableArray array];
-////    
-////    NSUInteger viewCount = 30;
-////    NSUInteger index;
-//    
-//    
-//    for (index = 0; index < viewCount; index++) {
-//        UIImageView *newView = [[[UIImageView alloc] initWithImage:anImage] autorelease];
-//        
-//        [newView setFrame:CGRectMake(index * width, 0.0, width, height);
-//         
-//         [[self someView] addSubview:newView];
-//         [views addObject:newView];
-//         }
-//    
-//    
-//    
-//    
-//    
-//    // Step to the next question
-//    self.currentPlayerIndex++;
-//    // Am I past the last question?
-//    if (self.currentPlayerIndex == [self.questions count]) {
-//        // Go back to the first question
-//        self.currentPlayerIndex = 0;
-//    }
-//    // Get the string at that index in the questions array
-//    NSString *question = self.questions[self.currentQuestionIndex];
-//    // Display the string in the question label
-//    self.questionLabel.text = question;
-//    // Reset the answer label
-//    self.answerLabel.text = @"???";
-//    
-//}
+- (IBAction)mod00:(id)sender
+{
+    
+    if(self.currentPlayerIndex==1){
+        self.currentPlayerIndex = 0;
+//        [self.cel00 setImage:];
+        NSLog(@"player %d esta ativo.", self.currentPlayerIndex);
+        
+    }else {
+        self.currentPlayerIndex = 1;
+        NSLog(@"player %d esta ativo.", self.currentPlayerIndex);
+    }
+}
 
 /*
 #pragma mark - Navigation

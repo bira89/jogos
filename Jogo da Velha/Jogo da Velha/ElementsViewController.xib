@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ElementsViewController">
             <connections>
+                <outlet property="cel00" destination="TFH-jQ-jwi" id="3Gs-Pt-ChO"/>
                 <outlet property="playerX" destination="D5Z-9h-ruC" id="1aj-CW-s0a"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,6 +27,18 @@
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageO.png" translatesAutoresizingMaskIntoConstraints="NO" id="U2O-BG-q6I" userLabel="JogadorO">
                     <rect key="frame" x="308" y="86" width="45" height="45"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xze-Ge-ysA" userLabel="00">
+                    <rect key="frame" x="89" y="234" width="46" height="30"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="mod00:" destination="-1" eventType="touchUpInside" id="Xmc-Vs-vR7"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFH-jQ-jwi" userLabel="00">
+                    <rect key="frame" x="89" y="270" width="46" height="41"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
