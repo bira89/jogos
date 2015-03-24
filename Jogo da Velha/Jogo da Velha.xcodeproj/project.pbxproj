@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4430EEC31AC19D3C001A35A1 /* ElementsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430EEC21AC19D3C001A35A1 /* ElementsView.m */; };
 		4430EEC51AC19F46001A35A1 /* imageX.png in Resources */ = {isa = PBXBuildFile; fileRef = 4430EEC41AC19F46001A35A1 /* imageX.png */; };
+		4430EEC71AC1AA7D001A35A1 /* imageO.png in Resources */ = {isa = PBXBuildFile; fileRef = 4430EEC61AC1AA7D001A35A1 /* imageO.png */; };
 		44511B331AC07F91008CB29E /* ElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44511B311AC07F91008CB29E /* ElementsViewController.m */; };
 		44511B341AC07F91008CB29E /* ElementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44511B321AC07F91008CB29E /* ElementsViewController.xib */; };
 		44ED63BD1AC07991000F1661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ED63BC1AC07991000F1661 /* main.m */; };
@@ -32,6 +33,7 @@
 		4430EEC11AC19D3C001A35A1 /* ElementsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsView.h; sourceTree = "<group>"; };
 		4430EEC21AC19D3C001A35A1 /* ElementsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsView.m; sourceTree = "<group>"; };
 		4430EEC41AC19F46001A35A1 /* imageX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageX.png; sourceTree = "<group>"; };
+		4430EEC61AC1AA7D001A35A1 /* imageO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageO.png; sourceTree = "<group>"; };
 		44511B301AC07F91008CB29E /* ElementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsViewController.h; sourceTree = "<group>"; };
 		44511B311AC07F91008CB29E /* ElementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsViewController.m; sourceTree = "<group>"; };
 		44511B321AC07F91008CB29E /* ElementsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ElementsViewController.xib; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		44ED63B91AC07991000F1661 /* Jogo da Velha */ = {
 			isa = PBXGroup;
 			children = (
+				4430EEC61AC1AA7D001A35A1 /* imageO.png */,
 				44ED63BE1AC07991000F1661 /* AppDelegate.h */,
 				44ED63BF1AC07991000F1661 /* AppDelegate.m */,
 				4430EEC41AC19F46001A35A1 /* imageX.png */,
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4430EEC51AC19F46001A35A1 /* imageX.png in Resources */,
+				4430EEC71AC1AA7D001A35A1 /* imageO.png in Resources */,
 				44ED63C51AC07991000F1661 /* LaunchScreen.xib in Resources */,
 				44511B341AC07F91008CB29E /* ElementsViewController.xib in Resources */,
 				44ED63C21AC07991000F1661 /* Images.xcassets in Resources */,
