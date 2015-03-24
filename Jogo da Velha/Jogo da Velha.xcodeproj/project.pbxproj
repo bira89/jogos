@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4430EEC31AC19D3C001A35A1 /* ElementsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430EEC21AC19D3C001A35A1 /* ElementsView.m */; };
+		4430EEC51AC19F46001A35A1 /* imageX.png in Resources */ = {isa = PBXBuildFile; fileRef = 4430EEC41AC19F46001A35A1 /* imageX.png */; };
+		44511B331AC07F91008CB29E /* ElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44511B311AC07F91008CB29E /* ElementsViewController.m */; };
+		44511B341AC07F91008CB29E /* ElementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44511B321AC07F91008CB29E /* ElementsViewController.xib */; };
 		44ED63BD1AC07991000F1661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ED63BC1AC07991000F1661 /* main.m */; };
 		44ED63C01AC07991000F1661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ED63BF1AC07991000F1661 /* AppDelegate.m */; };
 		44ED63C21AC07991000F1661 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44ED63C11AC07991000F1661 /* Images.xcassets */; };
@@ -25,6 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4430EEC11AC19D3C001A35A1 /* ElementsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsView.h; sourceTree = "<group>"; };
+		4430EEC21AC19D3C001A35A1 /* ElementsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsView.m; sourceTree = "<group>"; };
+		4430EEC41AC19F46001A35A1 /* imageX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageX.png; sourceTree = "<group>"; };
+		44511B301AC07F91008CB29E /* ElementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsViewController.h; sourceTree = "<group>"; };
+		44511B311AC07F91008CB29E /* ElementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsViewController.m; sourceTree = "<group>"; };
+		44511B321AC07F91008CB29E /* ElementsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ElementsViewController.xib; sourceTree = "<group>"; };
 		44ED63B71AC07991000F1661 /* Jogo da Velha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jogo da Velha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ED63BB1AC07991000F1661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44ED63BC1AC07991000F1661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +68,8 @@
 		44ED63AE1AC07991000F1661 = {
 			isa = PBXGroup;
 			children = (
+				4430EEC11AC19D3C001A35A1 /* ElementsView.h */,
+				4430EEC21AC19D3C001A35A1 /* ElementsView.m */,
 				44ED63B91AC07991000F1661 /* Jogo da Velha */,
 				44ED63CD1AC07991000F1661 /* Jogo da VelhaTests */,
 				44ED63B81AC07991000F1661 /* Products */,
@@ -78,9 +90,13 @@
 			children = (
 				44ED63BE1AC07991000F1661 /* AppDelegate.h */,
 				44ED63BF1AC07991000F1661 /* AppDelegate.m */,
+				4430EEC41AC19F46001A35A1 /* imageX.png */,
 				44ED63C11AC07991000F1661 /* Images.xcassets */,
 				44ED63C31AC07991000F1661 /* LaunchScreen.xib */,
 				44ED63BA1AC07991000F1661 /* Supporting Files */,
+				44511B301AC07F91008CB29E /* ElementsViewController.h */,
+				44511B311AC07F91008CB29E /* ElementsViewController.m */,
+				44511B321AC07F91008CB29E /* ElementsViewController.xib */,
 			);
 			path = "Jogo da Velha";
 			sourceTree = "<group>";
@@ -191,7 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4430EEC51AC19F46001A35A1 /* imageX.png in Resources */,
 				44ED63C51AC07991000F1661 /* LaunchScreen.xib in Resources */,
+				44511B341AC07F91008CB29E /* ElementsViewController.xib in Resources */,
 				44ED63C21AC07991000F1661 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				44ED63C01AC07991000F1661 /* AppDelegate.m in Sources */,
+				4430EEC31AC19D3C001A35A1 /* ElementsView.m in Sources */,
 				44ED63BD1AC07991000F1661 /* main.m in Sources */,
+				44511B331AC07F91008CB29E /* ElementsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +414,7 @@
 				44ED63D61AC07991000F1661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44ED63D71AC07991000F1661 /* Build configuration list for PBXNativeTarget "Jogo da VelhaTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +423,7 @@
 				44ED63D91AC07991000F1661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
