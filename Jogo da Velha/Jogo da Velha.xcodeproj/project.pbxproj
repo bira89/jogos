@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E4FEE61AC1B2AB00238FD5 /* hashtag.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E4FEE51AC1B2AB00238FD5 /* hashtag.png */; };
 		4430EEC31AC19D3C001A35A1 /* ElementsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430EEC21AC19D3C001A35A1 /* ElementsView.m */; };
 		4430EEC51AC19F46001A35A1 /* imageX.png in Resources */ = {isa = PBXBuildFile; fileRef = 4430EEC41AC19F46001A35A1 /* imageX.png */; };
 		4430EEC71AC1AA7D001A35A1 /* imageO.png in Resources */ = {isa = PBXBuildFile; fileRef = 4430EEC61AC1AA7D001A35A1 /* imageO.png */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09E4FEE51AC1B2AB00238FD5 /* hashtag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hashtag.png; sourceTree = "<group>"; };
 		4430EEC11AC19D3C001A35A1 /* ElementsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsView.h; sourceTree = "<group>"; };
 		4430EEC21AC19D3C001A35A1 /* ElementsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsView.m; sourceTree = "<group>"; };
 		4430EEC41AC19F46001A35A1 /* imageX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageX.png; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		44ED63B91AC07991000F1661 /* Jogo da Velha */ = {
 			isa = PBXGroup;
 			children = (
+				09E4FEE51AC1B2AB00238FD5 /* hashtag.png */,
 				4430EEC61AC1AA7D001A35A1 /* imageO.png */,
 				44ED63BE1AC07991000F1661 /* AppDelegate.h */,
 				44ED63BF1AC07991000F1661 /* AppDelegate.m */,
@@ -212,6 +215,7 @@
 			files = (
 				4430EEC51AC19F46001A35A1 /* imageX.png in Resources */,
 				4430EEC71AC1AA7D001A35A1 /* imageO.png in Resources */,
+				09E4FEE61AC1B2AB00238FD5 /* hashtag.png in Resources */,
 				44ED63C51AC07991000F1661 /* LaunchScreen.xib in Resources */,
 				44511B341AC07F91008CB29E /* ElementsViewController.xib in Resources */,
 				44ED63C21AC07991000F1661 /* Images.xcassets in Resources */,
