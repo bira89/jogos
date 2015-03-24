@@ -21,6 +21,7 @@
 @property (nonatomic) int currentPlayerIndex;
 
 @property (nonatomic, copy) NSArray *player;
+@property (nonatomic) int matriz[3][3];
 
 
 @end
@@ -33,6 +34,8 @@
 //    ElementsView *backgroundView = [[ElementsView alloc] init];
     // Set it as *the* view of this view controller
 //    self.view = backgroundView;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,28 +43,128 @@
     // Dispose of any resources that can be recreated.
 }
 
-//- (instancetype)initWithNibName:(NSString *)nibNameOrNil
-//                         bundle:(NSBundle *)nibBundleOrNil
-//{
-//
-//    
-//    // Call the init method implemented by the superclass
-//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-//    if (self) {
-//        // Create two arrays filled with questions and answers
-//        // and make the pointers point to them
-//        self.questions = @[@"From what is cognac made?",
-//                           @"What is 7+7?",
-//                           @"What is the capital of Vermont?"];
-//        self.answers = @[@"Grapes",
-//                         @"14",
-//                         @"Montpelier"];
-//    }
-//    // Return the address of the new object
-//    return self;
-//}
 
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil
+                         bundle:(NSBundle *)nibBundleOrNil
+{
+    for (int i = 0; i < 3; i++)
+        for ( int j = 0; j < 3; j++)
+            matriz[i][j] = 0;
+    
+    
+    _currentPlayerIndex = 1;
+        
+    
+             
+    
+    
+    // Return the address of the new object
+    return self;
+}
+
+- (IBAction)area0:(id)sender
+{
+    if (_currentPlayerIndex == 1){
+        matriz[0][0] = 1;
+    } else {
+        matriz[0][0] = 2;
+    }
+    
+    verMatriz();
+}
+
+- (IBAction)area1:(id)sender
+{
+    if (_currentPlayerIndex == 1){
+        matriz[0][0] = 1;
+    } else {
+        matriz[0][0] = 2;
+    }
+    
+    
+}
+- (IBAction)area2:(id)sender
+{
+    if (_currentPlayerIndex == 1){
+        matriz[0][0] = 1;
+    } else {
+        matriz[0][0] = 2;
+    }
+    
+    
+}
+- (IBAction)area3:(id)sender
+{
+    if (_currentPlayerIndex == 1){
+        matriz[0][0] = 1;
+    } else {
+        matriz[0][0] = 2;
+    }
+    
+    
+}
+- (IBAction)area4:(id)sender
+{
+    if (_currentPlayerIndex == 1){
+        matriz[0][0] = 1;
+    } else {
+        matriz[0][0] = 2;
+    }
+    
+    
+}
+- (IBAction)area5:(id)sender
+{
+    if (_currentPlayerIndex == 1){
+        matriz[0][0] = 1;
+    } else {
+        matriz[0][0] = 2;
+    }
+    
+    
+}
+- (IBAction)area6:(id)sender
+{
+    if (_currentPlayerIndex == 1){
+        matriz[0][0] = 1;
+    } else {
+        matriz[0][0] = 2;
+    }
+    
+    
+}
+- (IBAction)area7:(id)sender
+{
+    if (_currentPlayerIndex == 1){
+        matriz[0][0] = 1;
+    } else {
+        matriz[0][0] = 2;
+    }
+    
+    
+}
+- (IBAction)area8:(id)sender
+{
+    if (_currentPlayerIndex == 1){
+        matriz[0][0] = 1;
+    } else {
+        matriz[0][0] = 2;
+    }
+    
+    
+}
+
+- (void) verMatriz
+{
+    for (int i = 0; i < 3; i++){
+        for( int j = 0; j < 3; j++)
+            NSLog(@" %d ", matriz[i][j]);
+        
+        NSLog("/n");
+    }
+    
+}
 
 //- (IBAction)showPlayer:(id)sender
 //{

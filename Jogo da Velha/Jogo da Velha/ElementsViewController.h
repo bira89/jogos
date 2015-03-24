@@ -10,4 +10,7 @@
 
 @interface ElementsViewController : UIViewController
 
+
+- (void) verMatriz;
+
 @end
