@@ -45,7 +45,8 @@
     [self.playerO setImage:newO];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void) didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
 }
 
