@@ -6,6 +6,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ElementsViewController">
             <connections>
+                <outlet property="again" destination="7Og-zo-rFg" id="F5S-Qb-f7k"/>
+                <outlet property="area0" destination="VbV-0D-kMu" id="F0w-wU-znv"/>
+                <outlet property="area1" destination="XgZ-af-dHb" id="zS8-4s-oT1"/>
+                <outlet property="area2" destination="WO4-ZP-6Bc" id="66q-XH-GeD"/>
+                <outlet property="area3" destination="9D5-Fk-kkY" id="o9D-DC-j1A"/>
+                <outlet property="area4" destination="cts-jW-lft" id="lgo-UD-Vab"/>
+                <outlet property="area5" destination="N8C-p1-nEO" id="6t6-T0-tMP"/>
+                <outlet property="area6" destination="wCa-i6-kB4" id="CnN-DP-oiD"/>
+                <outlet property="area7" destination="rQL-mH-Vme" id="Qj3-vy-23f"/>
+                <outlet property="area8" destination="O1u-N2-fQu" id="bRH-TJ-Svv"/>
                 <outlet property="playerO" destination="U2O-BG-q6I" id="N9n-rR-2rs"/>
                 <outlet property="playerX" destination="D5Z-9h-ruC" id="d6U-50-oI5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -121,6 +131,14 @@
                         <action selector="area8:" destination="-1" eventType="touchUpInside" id="GML-T5-fBw"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Og-zo-rFg">
+                    <rect key="frame" x="21" y="23" width="63" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Again"/>
+                    <connections>
+                        <action selector="resetGame:" destination="-1" eventType="touchUpInside" id="u9T-3d-Y7Y"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -129,6 +147,8 @@
         </view>
     </objects>
     <resources>
+        <image name="662B5D2A-00E1-499D-8EFD-E4BDBD8B6930" width="48" height="48"/>
+        <image name="6A82C110-9349-4F61-B6EE-53F8EF050933" width="48" height="48"/>
         <image name="hashtag2.png" width="360" height="406"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
