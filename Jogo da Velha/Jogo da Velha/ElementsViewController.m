@@ -14,6 +14,10 @@
 //@end
 
 @interface ElementsViewController ()
+{
+    int matriz[3][3];
+}
+
 
 @property (nonatomic, weak) IBOutlet UIImageView *playerActive;
 @property (nonatomic, weak) IBOutlet UIImageView *playerX;
@@ -21,7 +25,7 @@
 @property (nonatomic) int currentPlayerIndex;
 
 @property (nonatomic, copy) NSArray *player;
-@property (nonatomic) int matriz[3][3];
+
 
 
 @end
@@ -54,6 +58,8 @@
     
     
     _currentPlayerIndex = 1;
+    
+    
         
     
              
@@ -65,92 +71,107 @@
 
 - (IBAction)area0:(id)sender
 {
-    if (_currentPlayerIndex == 1){
-        matriz[0][0] = 1;
-    } else {
-        matriz[0][0] = 2;
+    if (matriz[0][0] == 0){
+        matriz[0][0] = _currentPlayerIndex == 1 ? 1 : 2;
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
     
-    verMatriz();
+    
+    
+    
+    [self verMatriz];
+    
+    
 }
+
 
 - (IBAction)area1:(id)sender
 {
-    if (_currentPlayerIndex == 1){
-        matriz[0][0] = 1;
-    } else {
-        matriz[0][0] = 2;
+    if (matriz[0][1] == 0){
+        matriz[0][1] = _currentPlayerIndex == 1 ? 1 : 2;
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
+    
+    
+    
     
     
 }
 - (IBAction)area2:(id)sender
 {
-    if (_currentPlayerIndex == 1){
-        matriz[0][0] = 1;
-    } else {
-        matriz[0][0] = 2;
+    if (matriz[0][2] == 0){
+        matriz[0][2] = _currentPlayerIndex == 1 ? 1 : 2;
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
+    
+    
     
     
 }
 - (IBAction)area3:(id)sender
 {
-    if (_currentPlayerIndex == 1){
-        matriz[0][0] = 1;
-    } else {
-        matriz[0][0] = 2;
+    if (matriz[1][0] == 0){
+        matriz[1][0] = _currentPlayerIndex == 1 ? 1 : 2;
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
+        
     }
-    
     
 }
 - (IBAction)area4:(id)sender
 {
-    if (_currentPlayerIndex == 1){
-        matriz[0][0] = 1;
-    } else {
-        matriz[0][0] = 2;
+    if (matriz[1][1] == 0){
+        matriz[1][1] = _currentPlayerIndex == 1 ? 1 : 2;
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
-    
     
 }
 - (IBAction)area5:(id)sender
 {
-    if (_currentPlayerIndex == 1){
-        matriz[0][0] = 1;
-    } else {
-        matriz[0][0] = 2;
+    if (matriz[1][2] == 0){
+        matriz[1][2] = _currentPlayerIndex == 1 ? 1 : 2;
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
-    
     
 }
 - (IBAction)area6:(id)sender
 {
-    if (_currentPlayerIndex == 1){
-        matriz[0][0] = 1;
-    } else {
-        matriz[0][0] = 2;
-    }
     
+    if (matriz[2][0] == 0){
+        matriz[2][0] = _currentPlayerIndex == 1 ? 1 : 2;
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
+    }
+    /*
+    if (_currentPlayerIndex == 1){
+        matriz[2][0] = 1;
+    } else {
+        matriz[2][0] = 2;
+    }
+     */
     
 }
 - (IBAction)area7:(id)sender
 {
-    if (_currentPlayerIndex == 1){
-        matriz[0][0] = 1;
-    } else {
-        matriz[0][0] = 2;
+    if (matriz[2][1] == 0){
+        matriz[2][1] = _currentPlayerIndex == 1 ? 1 : 2;
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
     
+    /*
+    if (_currentPlayerIndex == 1){
+        matriz[2][1] = 1;
+    } else {
+        matriz[2][1] = 2;
+    }
+     */
     
 }
 - (IBAction)area8:(id)sender
 {
-    if (_currentPlayerIndex == 1){
-        matriz[0][0] = 1;
-    } else {
-        matriz[0][0] = 2;
+    if (matriz[2][2] == 0){
+        matriz[2][2] = _currentPlayerIndex == 1 ? 1 : 2;
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
+    
     
     
 }
@@ -158,13 +179,25 @@
 - (void) verMatriz
 {
     for (int i = 0; i < 3; i++){
-        for( int j = 0; j < 3; j++)
-            NSLog(@" %d ", matriz[i][j]);
+        NSLog(@"%d %d %d ", matriz[i][0], matriz[i][1], matriz[i][2]);
         
-        NSLog("/n");
+        
+        
     }
+    NSLog(@"Fim Matriz");
     
 }
+
+- (int) mudarJogador:(int) jogadorAtual
+{
+
+    
+    jogadorAtual = jogadorAtual == 1  ? 2 : 1;
+    
+    
+    return jogadorAtual;
+}
+
 
 //- (IBAction)showPlayer:(id)sender
 //{

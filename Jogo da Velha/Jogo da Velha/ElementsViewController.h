@@ -12,5 +12,6 @@
 
 
 - (void) verMatriz;
+- (int) mudarJogador:(int) jogadorAtual;
 
 @end
