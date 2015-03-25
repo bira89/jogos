@@ -33,8 +33,13 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 
 {
+    
     //self.playerActive = [[UIImage imageNamed:@"imageX.png"];
-                         
+    
+
+//    self.playerActive = [[UIImage imageNamed:@"imageX.png"];
+    
+
     
     NSLog(@"%@ was touched", self);
 //    // Get 3 random numbers between 0 and 1
