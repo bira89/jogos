@@ -8,6 +8,16 @@
 
 #import "ElementsView.h"
 
+@interface ElementsView ()
+
+@property (strong, nonatomic) UIImageView *playerActive;
+//@property (strong, nonatomic) UIColor *circleColor;
+//@property (strong, nonatomic) int active;
+
+
+@end
+
+
 @implementation ElementsView
 
 /*
@@ -17,6 +27,26 @@
     // Drawing code
 }
 */
+
+
+// When a finger touches the screen
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+
+{
+    self.playerActive = [[UIImage imageNamed:@"imageX.png"];
+                         
+    
+    NSLog(@"%@ was touched", self);
+//    // Get 3 random numbers between 0 and 1
+//    float red = (arc4random() % 100) / 100.0;
+//    float green = (arc4random() % 100) / 100.0;
+//    float blue = (arc4random() % 100) / 100.0;
+//    UIColor *randomColor = [UIColor colorWithRed:red
+//                                           green:green
+//                                            blue:blue
+//                                           alpha:1.0];
+//    self.circleColor = randomColor;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

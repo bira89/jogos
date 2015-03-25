@@ -7,7 +7,7 @@
 //
 
 #import "ElementsViewController.h"
-//#import "ElementsView.h"
+#import "ElementsView.h"
 
 //@interface ElementsViewController ()
 //
@@ -34,19 +34,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-//    ElementsView *backgroundView = [[ElementsView alloc] init];
-    // Set it as *the* view of this view controller
-//    self.view = backgroundView;
+    // Create a view
+    ElementsView *backgroundView = [[ElementsView alloc] init];
     
-    
+=======
+    self.view = backgroundView;
+>>>>>>> Stashed changes
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+=======
 
+>>>>>>> Stashed changes
 
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil
