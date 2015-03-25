@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="playerO" destination="U2O-BG-q6I" id="N9n-rR-2rs"/>
                 <outlet property="playerX" destination="D5Z-9h-ruC" id="d6U-50-oI5"/>
+                <outlet property="vencedor" destination="Diu-Dz-6g0" id="xFP-xe-Igg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -121,6 +122,12 @@
                         <action selector="area8:" destination="-1" eventType="touchUpInside" id="GML-T5-fBw"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Diu-Dz-6g0">
+                    <rect key="frame" x="91" y="86" width="187" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -129,6 +136,8 @@
         </view>
     </objects>
     <resources>
+        <image name="662B5D2A-00E1-499D-8EFD-E4BDBD8B6930" width="48" height="48"/>
+        <image name="6A82C110-9349-4F61-B6EE-53F8EF050933" width="48" height="48"/>
         <image name="hashtag2.png" width="360" height="406"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

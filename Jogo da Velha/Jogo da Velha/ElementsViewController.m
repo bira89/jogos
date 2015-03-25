@@ -26,6 +26,7 @@
 @property (nonatomic, copy) NSArray *player;
 @property (nonatomic, copy) NSArray *imageButtons;
 
+@property (weak, nonatomic) IBOutlet UILabel *vencedor;
 
 
 
@@ -81,11 +82,12 @@
 
     }
     
-    
+
     
     
     [self verMatriz];
     
+        [self condicaoVitoria];
     
 }
 
@@ -99,7 +101,7 @@
         [btn setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
     }
     
-    
+    [self condicaoVitoria];
     
     
     
@@ -114,7 +116,7 @@
 
     }
     
-    
+        [self condicaoVitoria];
     
     
 }
@@ -129,6 +131,8 @@
         
     }
     
+        [self condicaoVitoria];
+    
 }
 - (IBAction)area4:(id)sender
 {
@@ -140,6 +144,8 @@
 
     }
     
+        [self condicaoVitoria];
+    
 }
 - (IBAction)area5:(id)sender
 {
@@ -150,6 +156,8 @@
         [btn setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
 
     }
+    
+        [self condicaoVitoria];
     
 }
 - (IBAction)area6:(id)sender
@@ -168,6 +176,9 @@
         matriz[2][0] = 2;
     }
      */
+    
+        [self condicaoVitoria];
+    
     
 }
 - (IBAction)area7:(id)sender
@@ -188,6 +199,9 @@
     }
      */
     
+        [self condicaoVitoria];
+    
+    
 }
 - (IBAction)area8:(id)sender
 {
@@ -199,7 +213,7 @@
 
     }
     
-    
+        [self condicaoVitoria];
     
 }
 
@@ -221,7 +235,10 @@
     for (int i=0; i<3; i++) {
         for ( int j = 0; j < 3; j++){
             matriz[i][j] = 0;
+
         }
+
+        
     }
     
 }
@@ -237,6 +254,27 @@
     
     
     return jogadorAtual;
+}
+
+
+- (void) condicaoVitoria
+{
+    BOOL ganhou = false;
+    
+    NSLog(@"%d", _currentPlayerIndex);
+    
+    // Verificacao Linhas
+    for( int i = 0; i < 3; i++){
+        if ((matriz[i][0] == _currentPlayerIndex) && (matriz[i][1] == _currentPlayerIndex) && (matriz[i][2] == _currentPlayerIndex)){
+            ganhou = true;
+            [self.vencedor setText:[NSString stringWithFormat:@"Jogador %d ganhou!", _currentPlayerIndex ]];
+            return;
+        }
+    }
+//            [NSString stringWithFormat:@"<%@: %d unassigned>", self.label, self.resaleValue];
+    
+
+
 }
 
 
