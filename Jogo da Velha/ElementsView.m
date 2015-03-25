@@ -33,7 +33,7 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 
 {
-    self.playerActive = [[UIImage imageNamed:@"imageX.png"];
+    //self.playerActive = [[UIImage imageNamed:@"imageX.png"];
                          
     
     NSLog(@"%@ was touched", self);
