@@ -132,14 +132,14 @@
                         <action selector="area8:" destination="-1" eventType="touchUpInside" id="GML-T5-fBw"/>
                     </connections>
                 </button>
-<<<<<<< HEAD
+
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Diu-Dz-6g0">
                     <rect key="frame" x="91" y="86" width="187" height="45"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-=======
+
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Og-zo-rFg">
                     <rect key="frame" x="21" y="23" width="63" height="30"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -148,7 +148,7 @@
                         <action selector="resetGame:" destination="-1" eventType="touchUpInside" id="u9T-3d-Y7Y"/>
                     </connections>
                 </button>
->>>>>>> origin/master
+
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>

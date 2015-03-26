@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09D5830E1AC44A6A0007C22B /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D5830D1AC44A6A0007C22B /* empty.png */; };
 		09DAD29E1AC1C75A00EAD155 /* hashtag2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DAD29D1AC1C75A00EAD155 /* hashtag2.png */; };
 		4430EEC31AC19D3C001A35A1 /* ElementsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430EEC21AC19D3C001A35A1 /* ElementsView.m */; };
 		4430EEC51AC19F46001A35A1 /* imageX.png in Resources */ = {isa = PBXBuildFile; fileRef = 4430EEC41AC19F46001A35A1 /* imageX.png */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09D5830D1AC44A6A0007C22B /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
 		09DAD29D1AC1C75A00EAD155 /* hashtag2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hashtag2.png; sourceTree = "<group>"; };
 		4430EEC11AC19D3C001A35A1 /* ElementsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsView.h; sourceTree = "<group>"; };
 		4430EEC21AC19D3C001A35A1 /* ElementsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsView.m; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				4430EEC61AC1AA7D001A35A1 /* imageO.png */,
 				09DAD29D1AC1C75A00EAD155 /* hashtag2.png */,
+				09D5830D1AC44A6A0007C22B /* empty.png */,
 				44ED63BE1AC07991000F1661 /* AppDelegate.h */,
 				44ED63BF1AC07991000F1661 /* AppDelegate.m */,
 				4430EEC41AC19F46001A35A1 /* imageX.png */,
@@ -217,6 +220,7 @@
 				4430EEC71AC1AA7D001A35A1 /* imageO.png in Resources */,
 				44ED63C51AC07991000F1661 /* LaunchScreen.xib in Resources */,
 				44511B341AC07F91008CB29E /* ElementsViewController.xib in Resources */,
+				09D5830E1AC44A6A0007C22B /* empty.png in Resources */,
 				44ED63C21AC07991000F1661 /* Images.xcassets in Resources */,
 				09DAD29E1AC1C75A00EAD155 /* hashtag2.png in Resources */,
 			);

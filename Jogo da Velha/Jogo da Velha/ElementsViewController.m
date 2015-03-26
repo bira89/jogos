@@ -43,7 +43,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImage *new = [UIImage imageNamed:@"nil.png"];
+    UIImage *new = [UIImage imageNamed:@"empty.png"];
     UIImage *newX = [UIImage imageNamed:@"imageX.png"];
     UIImage *newO = [UIImage imageNamed:@"imageO.png"];
     self.imageButtons = @[new, newO, newX];
