@@ -18,11 +18,11 @@
 @property (nonatomic, copy) NSArray *player;
 @property (nonatomic, copy) NSArray *imageButtons;
 
-<<<<<<< HEAD
+
 @property (weak, nonatomic) IBOutlet UILabel *vencedor;
 
 
-=======
+
 @property (weak, nonatomic) IBOutlet UIImageView *playerX;
 @property (weak, nonatomic) IBOutlet UIImageView *playerO;
 @property (weak, nonatomic) IBOutlet UIButton *again;
@@ -35,7 +35,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *area6;
 @property (weak, nonatomic) IBOutlet UIButton *area7;
 @property (weak, nonatomic) IBOutlet UIButton *area8;
->>>>>>> origin/master
+
 
 @end
 
@@ -103,7 +103,7 @@
         _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area0 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex]forState:UIControlStateNormal];
     }
-<<<<<<< HEAD
+
     
 
     
@@ -112,9 +112,9 @@
     
         [self condicaoVitoria];
     
-=======
+
     [self verMatriz];
->>>>>>> origin/master
+
 }
 
 
@@ -125,15 +125,15 @@
         _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area1 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
     }
-<<<<<<< HEAD
+
     
     [self condicaoVitoria];
     
     
     
-=======
+
  
->>>>>>> origin/master
+
 }
 
 - (IBAction)area2:(id)sender
@@ -143,13 +143,10 @@
         _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area2 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
     }
-<<<<<<< HEAD
+
     
         [self condicaoVitoria];
     
-    
-=======
->>>>>>> origin/master
 }
 
 - (IBAction)area3:(id)sender
@@ -159,12 +156,12 @@
         _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area3 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
     }
-<<<<<<< HEAD
+
     
         [self condicaoVitoria];
     
-=======
->>>>>>> origin/master
+
+
 }
 
 - (IBAction)area4:(id)sender
@@ -174,12 +171,12 @@
         _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area4 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
     }
-<<<<<<< HEAD
+
     
         [self condicaoVitoria];
     
-=======
->>>>>>> origin/master
+
+
 }
 
 - (IBAction)area5:(id)sender
@@ -201,7 +198,7 @@
         _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area6 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
     }
-<<<<<<< HEAD
+
     /*
     if (_currentPlayerIndex == 1){
         matriz[2][0] = 1;
@@ -211,10 +208,7 @@
      */
     
         [self condicaoVitoria];
-    
-    
-=======
->>>>>>> origin/master
+
 }
 
 - (IBAction)area7:(id)sender
@@ -224,7 +218,7 @@
         _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area7 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
     }
-<<<<<<< HEAD
+
     
     /*
     if (_currentPlayerIndex == 1){
@@ -237,8 +231,8 @@
         [self condicaoVitoria];
     
     
-=======
->>>>>>> origin/master
+
+
 }
 
 - (IBAction)area8:(id)sender
@@ -248,12 +242,12 @@
         _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area8 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
     }
-<<<<<<< HEAD
+
     
         [self condicaoVitoria];
     
-=======
->>>>>>> origin/master
+
+
 }
 
 - (void) verMatriz
@@ -286,7 +280,7 @@
 }
 
 
-<<<<<<< HEAD
+
 - (void) condicaoVitoria
 {
     BOOL ganhou = false;
@@ -307,9 +301,4 @@
 
 }
 
-
-
-
-=======
->>>>>>> origin/master
 @end
