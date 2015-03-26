@@ -14,6 +14,9 @@
 		4430EEC71AC1AA7D001A35A1 /* imageO.png in Resources */ = {isa = PBXBuildFile; fileRef = 4430EEC61AC1AA7D001A35A1 /* imageO.png */; };
 		44511B331AC07F91008CB29E /* ElementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44511B311AC07F91008CB29E /* ElementsViewController.m */; };
 		44511B341AC07F91008CB29E /* ElementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44511B321AC07F91008CB29E /* ElementsViewController.xib */; };
+		44D4FBDB1AC448820059586C /* imageO2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D4FBDA1AC448820059586C /* imageO2.png */; };
+		44D4FBDD1AC448A30059586C /* imageX2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D4FBDC1AC448A30059586C /* imageX2.png */; };
+		44D4FBDF1AC448D10059586C /* nil.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D4FBDE1AC448D10059586C /* nil.png */; };
 		44ED63BD1AC07991000F1661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ED63BC1AC07991000F1661 /* main.m */; };
 		44ED63C01AC07991000F1661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ED63BF1AC07991000F1661 /* AppDelegate.m */; };
 		44ED63C21AC07991000F1661 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44ED63C11AC07991000F1661 /* Images.xcassets */; };
@@ -41,6 +44,9 @@
 		44511B301AC07F91008CB29E /* ElementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsViewController.h; sourceTree = "<group>"; };
 		44511B311AC07F91008CB29E /* ElementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsViewController.m; sourceTree = "<group>"; };
 		44511B321AC07F91008CB29E /* ElementsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ElementsViewController.xib; sourceTree = "<group>"; };
+		44D4FBDA1AC448820059586C /* imageO2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageO2.png; sourceTree = "<group>"; };
+		44D4FBDC1AC448A30059586C /* imageX2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageX2.png; sourceTree = "<group>"; };
+		44D4FBDE1AC448D10059586C /* nil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nil.png; path = ../nil.png; sourceTree = "<group>"; };
 		44ED63B71AC07991000F1661 /* Jogo da Velha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jogo da Velha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ED63BB1AC07991000F1661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44ED63BC1AC07991000F1661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 		44ED63B91AC07991000F1661 /* Jogo da Velha */ = {
 			isa = PBXGroup;
 			children = (
+				44D4FBDE1AC448D10059586C /* nil.png */,
+				44D4FBDC1AC448A30059586C /* imageX2.png */,
+				44D4FBDA1AC448820059586C /* imageO2.png */,
 				4430EEC61AC1AA7D001A35A1 /* imageO.png */,
 				09DAD29D1AC1C75A00EAD155 /* hashtag2.png */,
 				09D5830D1AC44A6A0007C22B /* empty.png */,
@@ -218,11 +227,17 @@
 			files = (
 				4430EEC51AC19F46001A35A1 /* imageX.png in Resources */,
 				4430EEC71AC1AA7D001A35A1 /* imageO.png in Resources */,
+				44D4FBDB1AC448820059586C /* imageO2.png in Resources */,
+				44D4FBDF1AC448D10059586C /* nil.png in Resources */,
 				44ED63C51AC07991000F1661 /* LaunchScreen.xib in Resources */,
 				44511B341AC07F91008CB29E /* ElementsViewController.xib in Resources */,
 				09D5830E1AC44A6A0007C22B /* empty.png in Resources */,
 				44ED63C21AC07991000F1661 /* Images.xcassets in Resources */,
 				09DAD29E1AC1C75A00EAD155 /* hashtag2.png in Resources */,
+<<<<<<< Updated upstream
+=======
+				44D4FBDD1AC448A30059586C /* imageX2.png in Resources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

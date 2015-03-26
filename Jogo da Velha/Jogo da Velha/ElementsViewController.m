@@ -260,6 +260,7 @@
 
 - (void) verGanhador
 {
+<<<<<<< Updated upstream
     for (int i=0; i<3; i++) {
         for ( int j = 0; j < 3; j++){
             matriz[i][j] = 0;
@@ -267,8 +268,29 @@
         }
 
         
+=======
+    int fimd1=0, fimd2=0, contd=2;
+    for (int i = 0; i < 3; i++) {
+        int l=i, c=i, fiml=0, fimc=0;
+        for (int j = 0; j < 3; j++) {
+            fiml += matriz[l][j];
+            fimc += matriz[j][c];
+        }
+        fimd1 += matriz[l][c];
+        fimd2 += matriz[l][contd];
+        contd--;
+        
+        if(fiml==3){ NSLog(@"Jogador X ganhou na linha: %d",l); return;}
+        if(fiml==6){ NSLog(@"Jogador O ganhou na linha: %d",l); return;}
+        if(fimc==3){ NSLog(@"Jogador X ganhou na coluna: %d",c); return;}
+        if(fimc==6){ NSLog(@"Jogador O ganhou na coluna: %d",c); return;}
+>>>>>>> Stashed changes
     }
     
+    if(fimd1==3){ NSLog(@"Jogador X ganhou na diagonal principal"); return;}
+    if(fimd1==6){ NSLog(@"Jogador O ganhou na diagonal principal"); return;}
+    if(fimd2==3){ NSLog(@"Jogador X ganhou na diagonal secundária"); return;}
+    if(fimd2==6){ NSLog(@"Jogador O ganhou na diagonal secundária"); return;}    
 }
 
 - (int) mudarJogador:(int) jogadorAtual
