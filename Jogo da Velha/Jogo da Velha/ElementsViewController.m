@@ -46,7 +46,7 @@
     UIImage *new = [UIImage imageNamed:@"empty.png"];
     UIImage *newX = [UIImage imageNamed:@"imageX.png"];
     UIImage *newO = [UIImage imageNamed:@"imageO.png"];
-    self.imageButtons = @[new, newO, newX];
+    self.imageButtons = @[new, newX, newO];
     [self.playerX setImage:newX];
     [self.playerO setImage:newO];
 }
@@ -100,17 +100,12 @@
 {
     if (matriz[0][0] == 0){
         matriz[0][0] = _currentPlayerIndex == 1 ? 1 : 2;
-        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area0 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex]forState:UIControlStateNormal];
+        [self condicaoVitoria];
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
 
     
-
-    
-    
-    [self verMatriz];
-    
-        [self condicaoVitoria];
     
 
     [self verMatriz];
@@ -122,12 +117,12 @@
 {
     if (matriz[0][1] == 0){
         matriz[0][1] = _currentPlayerIndex == 1 ? 1 : 2;
-        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area1 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
+        [self condicaoVitoria];
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
 
     
-    [self condicaoVitoria];
     
     
     
@@ -140,12 +135,12 @@
 {
     if (matriz[0][2] == 0){
         matriz[0][2] = _currentPlayerIndex == 1 ? 1 : 2;
-        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area2 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
+        [self condicaoVitoria];
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
 
     
-        [self condicaoVitoria];
     
 }
 
@@ -153,12 +148,12 @@
 {
     if (matriz[1][0] == 0){
         matriz[1][0] = _currentPlayerIndex == 1 ? 1 : 2;
-        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area3 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
+        [self condicaoVitoria];
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
 
     
-        [self condicaoVitoria];
     
 
 
@@ -168,12 +163,12 @@
 {
     if (matriz[1][1] == 0){
         matriz[1][1] = _currentPlayerIndex == 1 ? 1 : 2;
-        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area4 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
+        [self condicaoVitoria];
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
 
     
-        [self condicaoVitoria];
     
 
 
@@ -183,11 +178,11 @@
 {
     if (matriz[1][2] == 0){
         matriz[1][2] = _currentPlayerIndex == 1 ? 1 : 2;
-        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area5 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
+        [self condicaoVitoria];
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
     
-        [self condicaoVitoria];
     
 }
 
@@ -195,8 +190,9 @@
 {
     if (matriz[2][0] == 0){
         matriz[2][0] = _currentPlayerIndex == 1 ? 1 : 2;
-        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area6 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
+        [self condicaoVitoria];
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
 
     /*
@@ -207,7 +203,6 @@
     }
      */
     
-        [self condicaoVitoria];
 
 }
 
@@ -215,8 +210,9 @@
 {
     if (matriz[2][1] == 0){
         matriz[2][1] = _currentPlayerIndex == 1 ? 1 : 2;
-        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area7 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
+        [self condicaoVitoria];
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
 
     
@@ -228,7 +224,6 @@
     }
      */
     
-        [self condicaoVitoria];
     
     
 
@@ -239,12 +234,12 @@
 {
     if (matriz[2][2] == 0){
         matriz[2][2] = _currentPlayerIndex == 1 ? 1 : 2;
-        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
         [self.area8 setImage:[self.imageButtons objectAtIndex:_currentPlayerIndex] forState:UIControlStateNormal];
+        [self condicaoVitoria];
+        _currentPlayerIndex = [self mudarJogador:_currentPlayerIndex];
     }
 
     
-        [self condicaoVitoria];
     
 
 
